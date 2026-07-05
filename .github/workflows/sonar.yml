@@ -17,6 +17,7 @@ env:
 
 jobs:
   sonar:
+    if: ${{ github.repository == 'element-hq/element-x-android' }}
     name: Sonar Quality Checks
     runs-on: ubuntu-latest
     # Allow all jobs on main and develop. Just one per PR.
